@@ -25,3 +25,12 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== CHANGE YEAR DATE ====================*/ 
 document.getElementById('currentYear').innerHTML = new Date().getFullYear() 
+
+/*==================== auto typed ====================*/ 
+
+var typed = new Typed('.auto-input', {
+    strings: ['Tomas Rojo', 'Full Stack Developer'],
+    typeSpeed: 100,
+    backSpeed: 200,
+    loop: true
+  });
