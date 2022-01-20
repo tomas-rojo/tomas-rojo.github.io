@@ -52,4 +52,24 @@ var typed = new Typed('.auto-input', {
     loop: true
   });
 
+/*=============== DARK LIGHT THEME ===============*/
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const lightTheme = 'bx-sun'
+
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    if (themeButton.classList.contains('bx-moon')){
+        themeButton.classList.remove('bx-moon')
+        themeButton.classList.toggle('bx-sun')
+    } else {
+        themeButton.classList.remove('bx-sun')
+        themeButton.classList.toggle('bx-moon')
+    }
+
+})
+
 
