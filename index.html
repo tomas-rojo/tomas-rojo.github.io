@@ -21,37 +21,36 @@
 
     <!--========== HEADER ==========-->
 
-    <header class="l-header shadow-sm" id="header">
-    <nav class="nav bd-container">
+    <nav class="sticky-top shadow-sm">
         <a href="#" class="nav__logo">TOMAS ROJO</a>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#top" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#about-me" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#my-projects" class="nav__link">My Projects</a></li>
-                <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                <li class="nav__item"><a href="#work-experience" class="nav__link">Work Experience</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
-                <li class="nav__item"><a href="#" class="nav__link"><i class="bx bx-sun"></i></a></li>
-            </ul>
-        </div>
+        <ul class="nav-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-projects">My Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#"><i class="bx bx-sun" id="change-theme"></i></a></li>
+        </ul>
 
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
     </nav>
-    </header>
 
     <!--========== HOME ==========-->
     
-    <div class="container mt-5">
+    <div class="container mt-4">
 
       <div class="row text-center">
 
         <div class="col-md-6 mt-5">
           <h1 class="text-box">Hi, I am <span class="auto-input"></span></h1>
-          <a class="button mt-4" href="#contact">Contact Me</a>
+          <p>If you would like to get in touch for being part of your team, feel free to contact me through all my available channels. </p>
+          <a class="btn__contact mt-4" href="#contact">Contact Me &nbsp;<span class="btn__contact-arrow"><i class='bx bx-chevron-right-square' ></i></span></a>
         </div>
         
 
@@ -88,15 +87,26 @@
         </div>
 
         <div class="row mt-3 text-center">
-            <div class="col-md-6">
-                <i class='bx bxl-python techs'></i><h6>Python</h6>
-                <i class="bx bxs-data techs"></i><h6>PostgreSQL - Oracle - SQLite</h6>
+
+            <div class="col-md-4">
+                <img src="https://img.icons8.com/color/48/000000/python--v1.png" class="techs2"/><h6>Python</h6>
+                <span><img src="https://img.icons8.com/color/48/000000/postgreesql.png" class="techs2"/> - <img class="techs2" src="https://img.icons8.com/color/48/000000/oracle-logo.png"/></span><h6>PostgreSQL - Oracle - SQLite</h6>
                 <i class="bx bxl-django techs"></i><h6>Framework Django</h6>
+                <img src="https://img.icons8.com/color/48/000000/nginx.png" class="techs2"/><h6>Nginx</h6>
             </div>
-            <div class="col-md-6">
-            <i class="bx bxl-html5 techs"></i><h6>HTML5</h6>
-            <i class="bx bxl-bootstrap techs"></i><h6>Bootstrap</h6>
-            <i class="bx bxl-css3 techs"></i><h6>CSS</h6>
+
+            <div class="col-md-4">
+                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" class="techs2"/><h6>JavaScript</h6>
+                <img src="https://img.icons8.com/color/48/000000/nodejs.png" class="techs2"/><h6>NodeJs</h6>
+                <img src="https://img.icons8.com/color/50/000000/mongodb.png" class="techs2"/><h6>MongoDB</h6>
+                <img src="https://aws1.discourse-cdn.com/arduino/original/4X/1/0/9/109c0031e5886a6256eb5e9b839838948516df20.png" class="techs2"/><h6>Socket IO</h6>
+            </div>
+
+            <div class="col-md-4">
+                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" class="techs2"/></i><h6>HTML5</h6>
+                <img src="https://img.icons8.com/color/48/000000/css3.png" class="techs2"/><h6>CSS3</h6>
+                <img src="https://img.icons8.com/color/48/000000/bootstrap.png" class="techs2"/><h6>Bootstrap</h6>
+                <img src="https://img.icons8.com/color/48/000000/git.png" class="techs2"/><h6>Git Version</h6>
             </div>
         </div>    
     
@@ -117,18 +127,17 @@
 
       <div class="row text-center">
 
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
           <div class="card mt-5">
             <div class="card-body">
               <h3 class="card-title">Weather App with Django</h3>
               <p class="card-text">Weather App in Django framework using Open Weather Map API</p>
-              <br>
               <a href="https://github.com/tomas-rojo/Weather_App" target="_blank" class="btn btn-outline-secondary mt-3"><i class="bx bx-code-alt"></i> Go to Code</a>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
           <div class="card mt-5">
             <div class="card-body">
               <h3 class="card-title">Gym Management System</h3>
@@ -138,7 +147,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
           <div class="card mt-5">
             <div class="card-body">
               <h3 class="card-title">Web Scrapper with Selenium</h3>
@@ -215,7 +224,7 @@
         <div class="col-12 mt-5">
         <h1 class="content__title">Work Experience</h1>
         <hr class="line">
-        <h4 class="text-about-me">I have been working in the 5-Star luxury hospitality industry for the last 5 years</h4>
+        <h4 class="text-about-me">I have been working in the 5-Star luxury hospitality industry for the last 7 years</h4>
         <h4 class="text-about-me">but really looking forward to get my first opportuniy in software development.</h4>
         </div>
 
@@ -272,7 +281,7 @@
 
         <div class="row text-center">
           <div class="col-md-6 mt-4">
-            <img src="img/comunicar.svg" alt="" class="contact__logo">
+            <img src="img/comunicar.svg" alt="" class="contact__logo" >
           </div>
           <div class="col-md-6">
             <ul class="contact__info mt-5">

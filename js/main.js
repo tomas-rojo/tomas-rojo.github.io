@@ -1,32 +1,49 @@
 /*==================== SHOW MENU ====================*/
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
-    
-    // Validate that variables exist
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            // We add the show-menu class to the div tag with the nav__menu class
-            nav.classList.toggle('show-menu')
-        })
-    }
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li')
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active')
+        
+        // Link Animation
+        navLinks.forEach((link, index) => {
+            if(link.style.animation){
+                link.style.animation = ``
+            } else{
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index/7 + 0.5}s`
+            } 
+        });
+
+        //Burger Animation
+        burger.classList.toggle('toggle')
+    });
 }
-showMenu('nav-toggle','nav-menu')
+
+navSlide()
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav-links li')
+const nav = document.querySelector('.nav-links');
+const burger = document.querySelector('.burger');
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
+    const navLinks = document.querySelectorAll('.nav-links li')
     // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
+    nav.classList.remove('nav-active')
+    burger.classList.remove('toggle')
+    navLinks.forEach(link => { 
+        link.style.animation = ``})
+    
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== CHANGE YEAR DATE ====================*/ 
+
 document.getElementById('currentYear').innerHTML = new Date().getFullYear() 
 
-/*==================== auto typed ====================*/ 
+/*==================== AUTO TYPED ====================*/ 
 
 var typed = new Typed('.auto-input', {
     strings: ['Tomas Rojo', 'Full Stack Developer'],
@@ -34,3 +51,5 @@ var typed = new Typed('.auto-input', {
     backSpeed: 200,
     loop: true
   });
+
+
