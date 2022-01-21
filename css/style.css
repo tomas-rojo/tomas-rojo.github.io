@@ -176,12 +176,12 @@ nav {
   }
 
 /*========== ABOUT ==========*/
-.techs {
+.techs__icon {
   font-size: var(--h1-font-size);
   margin: 10px 0px;
    }
   
-.techs2{
+.techs__logo{
   margin: 10px 0px;
   width: 14%;
 }
