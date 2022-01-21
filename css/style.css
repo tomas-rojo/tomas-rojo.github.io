@@ -221,22 +221,18 @@ div.card-body{
 
 .contact__info li {
   cursor: default;
-  transition: 0.3s ease-in;
   display: flex;
   margin: var(--mb-3); }
 
 .contact__info li:hover {
-  transition: 0.3s ease-in;
   color: var(--first-color-alt);
 }
 
 .contact__info li a:hover {
-  transition: 0.3s ease-in;
   color: var(--first-color-alt);
 }
 
 .contact__info li a span:hover {
-  transition: 0.3s ease-in;
   color: var(--first-color-alt);
 }
 
@@ -278,7 +274,7 @@ footer{
     .nav-links {
       position:absolute;
       right: 0px;
-      height: 80vh;
+      height: 92vh;
       padding: 0.5rem 0 4rem 0;
       top:9vh;
       background-color: var(--first-color-alt);
@@ -316,13 +312,13 @@ footer{
 
 .nav-links a{
   transition: .3s;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   color: var(--container-color);
 }
 
 .nav-links a:hover{
   transition: .3s;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .nav-active{
