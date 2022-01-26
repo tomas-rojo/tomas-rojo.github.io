@@ -46,7 +46,7 @@ document.getElementById('currentYear').innerHTML = new Date().getFullYear()
 /*==================== AUTO TYPED ====================*/ 
 
 var typed = new Typed('.auto-input', {
-    strings: ['Tomas Rojo', 'Full Stack Developer'],
+    strings: ['Tomas Rojo', 'a Full Stack Developer'],
     typeSpeed: 100,
     backSpeed: 200,
     loop: true

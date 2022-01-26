@@ -220,38 +220,33 @@ div.card-body{
   border-radius: 25px;}
 
 .contact__info li {
-  cursor: default;
+  cursor: pointer;
   display: flex;
   margin: var(--mb-3); }
-
-.contact__info li:hover {
-  color: var(--first-color-alt);
-}
-
-.contact__info li a:hover {
-  color: var(--first-color-alt);
-}
-
-.contact__info li a span:hover {
-  color: var(--first-color-alt);
-}
-
-.icon-big {
-  font-size: var(--h1-font-size);
-  margin-right: var(--mb-3); }
 
 .contact__info li span {
   display: flex;
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-3); }
+  
+.contact__info li:hover {
+  color: var(--first-color-alt);}
+
+.contact__info li span:hover  {
+  color: var(--first-color-alt);}
+
+.icon-big {
+  text-decoration: none;
+  font-size: var(--h1-font-size);
+  margin-right: var(--mb-3); }
 
 .contact__email {
   width: 120%; }
 
-ul li a span{
+ul li span{
   text-decoration: none;
   color: var(--text-color); }
-  
+
 /*========== FOOTER ==========*/
 
 footer{
