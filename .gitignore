@@ -1,0 +1,8 @@
+# Pants workspace files
+/.pants.*
+/dist/
+/.pids
+
+.cache
+.venv
+venv/

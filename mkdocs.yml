@@ -1,0 +1,75 @@
+site_name: Tomas Rojo
+site_author: Tomas Rojo
+
+# Copyright
+copyright: Copyright &copy; 2024 Tomas Rojo
+
+theme:
+  name: material
+  locale: en
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue-grey
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: blue-grey
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - content.code.annotate
+    - content.code.copy
+
+
+plugins:
+  - search
+  - tags
+  - social
+  - blog:
+      blog_dir: blog/
+      pagination_per_page: 1
+
+nav:
+  - Home:
+      - About: index.md
+  - Blog:
+      - blog/index.md
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/tomas-rojo
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/tomasrojo32
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tomas-rojo/
+    # - icon: fontawesome/brands/instagram
+    #   link: https://www.instagram.com/
+    - icon: fontawesome/solid/envelope
+      link: mailto:tomasrojo21@hotmail.com
