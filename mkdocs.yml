@@ -3,10 +3,6 @@ site_author: Tomas Rojo
 site_url: https://tomasrojo.cloud
 copyright: Copyright &copy; 2024 Tomas Rojo
 
-repo_name: tomas-rojo/mywebsite
-repo_url: https://github.com/tomas-rojo/mywebsite
-
-
 theme:
   name: material
   locale: en
